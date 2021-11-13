@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">mad_project</string>
+    <string name="loginLink"><u>LOGIN NOW</u></string>
+    <string name="title">Book Donation</string>
+
+    <string-array name="subject">
+        <item>All</item>
+        <item>CS</item>
+        <item>BBA</item>
+        <item>BED</item>
+        <item>BE</item>
+    </string-array>
+
+    <string-array name="selectDept">
+        <item>Select Department</item>
+        <item>CS</item>
+        <item>BBA</item>
+        <item>BED</item>
+        <item>BE</item>
+    </string-array>
+</resources>

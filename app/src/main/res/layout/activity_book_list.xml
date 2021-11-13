@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookList"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USERNAME"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:layout_margin="2dp"
+        >
+
+      <Spinner
+          android:id="@+id/subjects"
+          android:layout_width="0dp"
+          android:layout_height="40dp"
+          android:layout_weight="8"
+          android:entries="@array/subject"
+          android:textSize="25dp"
+          android:layout_margin="5dp"
+          android:background="@drawable/cvborder"
+          >
+
+      </Spinner>
+        <Button
+            android:id="@+id/btnVB"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:text="View"
+            android:background="@drawable/cvborder"
+            >
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:padding="10dp">
+
+
+        <ListView
+            android:id="@+id/bookList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnDashboard"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_login"
+            android:padding="20dp"
+            android:text="Back to Dashboard"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>
